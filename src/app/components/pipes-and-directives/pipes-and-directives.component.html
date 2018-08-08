@@ -1,0 +1,12 @@
+<div class="container">
+  <h4>Pipe: Mask Credit Card</h4>
+  <p>Unmasked Credit Card Number: {{creditCardNo}}</p>
+  <p>Masked Credit Card Number with Pipe: {{creditCardNo | maskingPipe}}</p>
+  <br>
+  <hr>
+  <h4>Attribute Directive: Cycle Colors</h4>
+  <p [ngClass]="{'blue-text':textColors[0],'black-text':textColors[1],'red-text':textColors[2],'green-text':textColors[3],'yellow-text':textColors[4]}">The color of this text will cycle through colors after given interval(2 seconds).</p>
+  <br>
+  <hr>
+  <h4>Structural Directive: Remove Element After</h4>
+  <p *ngIf="showElement">This element will be removed from DOM after 5 seconds</p>
